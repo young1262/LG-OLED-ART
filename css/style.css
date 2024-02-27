@@ -1,0 +1,496 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Diphylleia&family=Gasoek+One&family=Jomolhari&family=Noto+Sans+KR:wght@100..900&family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12rem;
+  padding: 0 6rem;
+  z-index: 222;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+header .header_in {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_in h1 img {
+  width: 20.2rem;
+  height: 7.3rem;
+  padding-top: 0.9rem;
+}
+header .header_in nav {
+  display: flex;
+  align-items: center;
+  width: 86rem;
+  position: relative;
+}
+header .header_in nav li {
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+header .header_in nav li a {
+  margin: 0 3rem;
+  padding: 0.5rem;
+  letter-spacing: 0.2rem;
+  position: relative;
+}
+header .header_in nav li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  background-color: #F0F0F0;
+  transition: all 0.3s;
+}
+header .header_in nav li:hover a:after {
+  width: 100%;
+  left: 0;
+}
+header .header_in nav .icon {
+  margin-left: 4.3rem;
+  display: flex;
+  align-items: center;
+}
+header .header_in nav .icon img {
+  width: 2.4rem;
+  height: 2.6rem;
+  margin-left: 3rem;
+}
+header .header_in nav .icon button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+header .header_in nav .icon button img {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.subNav {
+  width: 100%;
+  height: 100%;
+  background: #0D0D0D;
+  font-family: "Jomolhari", sans-serif;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: 0.3s;
+  z-index: 333;
+}
+.subNav .subList {
+  padding: 12rem;
+  height: 100vh;
+}
+.subNav .subList img {
+  float: right;
+  width: 5.4rem;
+  height: 5.4rem;
+  margin-top: -7rem;
+}
+.subNav .subList .sub_menu {
+  font-size: 6.8rem;
+}
+.subNav .subList .sub_menu a {
+  position: relative;
+}
+.subNav .subList .sub_menu a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 0.1rem;
+  background-color: #F0F0F0;
+  transition: all 0.3s;
+}
+.subNav .subList .sub_menu li:hover a:after {
+  width: 100%;
+}
+.subNav .subList .sub {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 2;
+}
+.subNav .subList span {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  margin-right: 3rem;
+}
+
+header.on {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  font-size: 16rem;
+  font-family: "Jomolhari", sans-serif;
+  font-weight: normal;
+  padding: 0 6rem;
+}
+
+article {
+  font-family: "Poppins", sans-serif;
+}
+article span {
+  display: block;
+  font-size: 4rem;
+}
+article p {
+  font-size: 1.8rem;
+}
+
+/******** 1200px이하 *********/
+@media (max-width: 1200px) {
+  .header_in {
+    border: 1px solid red;
+  }
+  .header_in li a {
+    display: none;
+  }
+  .header_in .icon {
+    border: 1px solid blue;
+  }
+}
+#wrap {
+  width: 100%;
+  overflow: hidden;
+  color: #F0F0F0;
+  background: #0D0D0D;
+}
+#wrap .visual {
+  position: relative;
+}
+#wrap .visual .container video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+#wrap .visual .container .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+#wrap .visual .container h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 16rem;
+  position: absolute;
+  top: 33%;
+  z-index: 111;
+}
+#wrap .visual .container h2 span {
+  font-family: "Jomolhari", sans-serif;
+  margin: 0 3rem;
+  font-weight: normal;
+}
+#wrap .scroll {
+  position: absolute;
+  left: calc(50% - 1.1rem);
+  bottom: 10%;
+  animation: scroll 1.5s 2s infinite ease-in-out;
+}
+#wrap .scroll img {
+  height: 10rem;
+}
+#wrap .scroll span {
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Slogan */
+#section1 {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  font-size: 8rem;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+#section1 .slogan {
+  margin-top: 24rem;
+}
+#section1 .slogan .s_txt {
+  font-size: 10rem;
+  font-family: "Jomolhari", sans-serif;
+}
+#section1 .slogan .small {
+  font-size: 3rem;
+  margin-top: 5rem;
+}
+
+/* Project */
+#section2 {
+  padding: 0 6rem;
+}
+#section2 article {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+#section2 article div {
+  width: 50%;
+}
+#section2 article img {
+  width: 100%;
+  height: 70%;
+}
+
+/* Artist */
+#section3 {
+  display: inline-block;
+}
+#section3 .artist_grid {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: 50% 50%;
+}
+#section3 .artist_grid a {
+  display: inline-block;
+  overflow: hidden;
+}
+#section3 .artist_grid .grid_box1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#section3 .artist_grid .grid_box2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+#section3 .artist_grid .grid_box3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+#section3 .artist_grid img {
+  transition: all 0.5s ease-in-out;
+}
+#section3 .artist_grid img:hover {
+  transform: scale(1.1);
+}
+#section3 .artist_grid p {
+  display: none;
+}
+
+/* Artwork */
+#section4 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+#section4 .artinner {
+  position: absolute;
+  top: 23%;
+  left: 0;
+}
+#section4 .artinner .canvas {
+  display: flex;
+}
+#section4 .artinner .canvas .artwork1, #section4 .artinner .canvas .artwork2 {
+  display: flex;
+  align-items: center;
+  animation: slide 50s linear infinite;
+}
+#section4 .artinner .canvas .artwork1 .cell, #section4 .artinner .canvas .artwork2 .cell {
+  width: 308px;
+  height: 362px;
+  opacity: 0.6;
+  margin-left: -20px;
+}
+#section4 .artinner .canvas .artwork1 .cell:nth-child(even), #section4 .artinner .canvas .artwork2 .cell:nth-child(even) {
+  width: 402px;
+  height: 498px;
+  opacity: 1;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* About */
+#section5 {
+  width: 100%;
+  height: 130vh;
+  display: inline-block;
+  position: relative;
+}
+#section5 .marquee_w {
+  display: flex;
+}
+#section5 .marquee_w .marquee {
+  display: flex;
+  align-items: center;
+  animation: slide 20s linear infinite;
+}
+#section5 .marquee_w .marquee .slideText {
+  font-size: 30rem;
+  letter-spacing: 1rem;
+  font-family: "Jomolhari", sans-serif;
+  font-weight: 700;
+  color: #242424;
+}
+#section5 .aboutImg {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+}
+#section5 .aboutTxt {
+  position: absolute;
+  top: 47%;
+  left: 20%;
+  font-size: 2.5rem;
+}
+#section5 .aboutTxt .about_p {
+  font-size: 5.4rem;
+}
+
+/* Footer */
+footer {
+  height: 14rem;
+  width: 100%;
+  background: #0F0F0F;
+  color: #F0F0F0;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  padding: 0 6rem;
+}
+footer .footer_in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_in .sns_wrap {
+  width: 40rem;
+  margin-top: 1.5rem;
+}
+footer .footer_in .sns_wrap img {
+  width: 5.4rem;
+  height: 5.4rem;
+  margin-left: 6rem;
+}
+
+/******** 1420px이하 *********/
+@media (max-width: 1420px) {
+  article span {
+    font-size: 3.2rem;
+  }
+  article p {
+    font-size: 1.4rem;
+  }
+  #section1 {
+    font-size: 6rem;
+  }
+  #section1 .s_txt {
+    font-size: 8rem;
+  }
+  #section1 .small {
+    font-size: 2rem;
+  }
+}
+/******** 1300px이하 *********/
+@media (max-width: 1300px) {
+  #section1 {
+    font-size: 5rem;
+  }
+  #section1 .s_txt {
+    font-size: 7rem;
+  }
+  #section1 .small {
+    font-size: 1.8rem;
+  }
+}
+/******** 1200px이하 *********/
+@media (max-width: 1200px) {
+  article span {
+    font-size: 2.8rem;
+  }
+  article p {
+    font-size: 1.2rem;
+  }
+  #section1 {
+    font-size: 4rem;
+  }
+  #section1 .s_txt {
+    font-size: 6rem;
+  }
+  #section1 .small {
+    font-size: 1.6rem;
+  }
+  #section5 {
+    height: 150vh;
+    transition: 0.3s ease-in-out;
+  }
+  #section5 .aboutImg {
+    top: 20%;
+    left: 20%;
+  }
+  #section5 .aboutTxt {
+    top: 65%;
+    left: 27%;
+  }
+  #section5 .aboutTxt b {
+    font-size: 4.2rem;
+  }
+  #section5 .aboutTxt p {
+    font-size: 1.4rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
