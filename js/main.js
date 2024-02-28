@@ -16,4 +16,18 @@ window.addEventListener('scroll',function(){
   if(this.window.scrollY == 0) header.classList.remove('on')
 })
 
+/* top Btn */ 
+$(window).scroll(function(){
+  let sct = $(window).scrollTop();
 
+  if(sct){
+      $('.top_btn').fadeIn();
+  }else{
+      $('.top_btn').fadeOut();
+  }
+});
+$('.top_btn').click(function(){
+  $('html,body').animate({
+      scrollTop: 0
+  },500);
+});

@@ -1,23 +1,29 @@
+/* header */ 
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 12rem;
-    padding: 0 6rem;       
+    padding: 0 2.5rem;       
     z-index: 222;
     display: flex;
     align-items: center;
     transition: 0.3s;
+    
     .header_in { 
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        position: relative;
         h1 {
-            img {           
-                width: 20.2rem;
+            
+            img {
+                
+                position: absolute;
+                top: -2.7rem;         
+                width: 12.2rem;
                 height: 7.3rem;
                 padding-top: 0.9rem;
             }
@@ -30,7 +36,7 @@ header {
        
             li {
                 font-family: "Poppins", sans-serif;
-                display: inline-block;
+                display: none;
                 font-size: 1.8rem;
                 font-weight: 600;
                 
@@ -59,14 +65,16 @@ header {
                 }
             } 
             .icon {
-                margin-left: 4.3rem;
+                margin-left: 3.3rem;
                 display: flex;               
                 align-items: center;
-                                
+                position: absolute;
+                top: -0.4rem;
+                right: 0;           
                 img {
                     width: 2.4rem;
                     height: 2.6rem;
-                    margin-left: 3rem;
+                    margin-left: 2rem;
                 }
                 button {
                     background: transparent;
@@ -82,6 +90,7 @@ header {
         }
     }  
 }
+/* 사이드 메뉴 */ 
 .subNav {
     width: 100%;   
     height: 100%;
@@ -131,48 +140,270 @@ header {
             font-family: "Poppins", sans-serif;
             line-height: 2;
         }
-        span {
-            font-family: "Poppins", sans-serif;
-            font-size: 1.8rem;
-            margin-right: 3rem;
+        .glb {
+            margin-top: 3rem;
+
+            span {
+                
+                font-family: "Poppins", sans-serif;
+                font-size: 1.8rem;
+                margin-right: 3rem;
+                margin-top: 1rem;
+            }
         }
+      
     }  
 }
 header.on {
     background:rgba(0,0,0,50%);   
 }
 h3 {
-    font-size: 16rem;
+    font-size: 6rem;
     font-family: "Jomolhari", sans-serif;
     font-weight: normal;
-    padding: 0 6rem;
+    padding: 0 2.5rem;
     
 }
 article {
     font-family: "Poppins", sans-serif;
    span {
     display: block;
-    font-size: 4rem;
+    font-size: 2rem;
+    margin: 1rem 0;
    }
    p {
-    font-size: 1.8rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
    }
 }
-/******** 1200px이하 *********/
-@media (max-width:1200px){
-    .header_in {
-        border: 1px solid red;     
-        li a {
-            display: none;
-             
-        }
-        .icon {
-            border: 1px solid blue;
+/* Footer */
+footer {
+    height: 23rem;
+    width: 100%;
+    background: $f-color;
+    color: $text-color;
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    padding: 0 2.5rem;
+    position: relative;
+    
+    .footer_in {
+        
+        margin-top: 3rem;
+        
+        li{
+            letter-spacing: 0.2rem;
             
+        }
+    }
+    .sns_wrap {
+            position: absolute;
+            bottom: 8rem;
+            right: 2rem;
+        
+        img {
+            width: 4rem;
+            height: 4rem;
+            margin-left: 1rem;
+                                                  
+        } 
+    }
+    .copy {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    /* Top Btn*/ 
+
+}
+.top_btn {
+   
+    position: fixed;
+    right: 0;
+    top: 70%;
+    z-index: 444;
+    display: none;
+    img {
+        animation: topbtn 30s linear infinite;
+    }
+
+    &::after {       
+        content: '';
+        width: 2rem;
+        height: 2rem;
+        background: url('../img/toparrow.png');
+        background-size: cover;   
+        position: absolute;
+        bottom: 6.5rem;
+        right: 6rem;        
+    }
+
+    
+}
+
+@keyframes topbtn {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+/***** 500px이상 *****/
+@media (min-width:500px) {
+    header {
+        .header_in {
+            h1 {
+                img {
+                    width: 16.2rem;
+                    height: 7.3rem; 
+                }
+            }
+        }
+    }
+    article {
+        span {
+         font-size: 2.2rem;
+        }
+        p {
+         font-size: 1.2rem;
+        }
+    }
+    h3 {
+        font-size: 8rem;
+    }
+}
+
+/***** 768px이상 *****/
+@media (min-width:768px){
+    header {
+        padding: 0 6rem; 
+        .header_in {
+            h1 {
+                img {
+                    width: 20.2rem;
+                    height: 7.3rem; 
+                }
+            }
+        }
+    }
+    h3 {
+        font-size: 12rem;
+        padding: 0 6rem;
+    }
+ 
+    footer {
+        height: 14rem;
+        width: 100%;
+        background: $f-color;
+        color: $text-color;
+        font-size: 1.8rem;
+        font-family: "Poppins", sans-serif;
+        padding: 0 6rem;
+    
+        .footer_in {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            li a {
+                letter-spacing: 0.2rem;
+            }
+        }
+        .sns_wrap {
+            width: 20rem;          
+            margin-top: 1.5rem;
+            bottom: 5rem;
+            img {
+                width: 5rem;
+                height: 5rem;
+                margin-left: 2.5rem;                         
+            } 
+         }
+        .copy {
+            font-size: 1.4rem;
+        }
+    }
+}
+/***** 768px이하 *****/
+@media (max-width:768px){
+    .subNav {
+        .subList {
+            padding: 12rem 2.5rem ;
+            img {
+                   
+                width: 4.2rem;
+                height: 4.2rem;
+                       
+            }
         }
     }
 }
 
+/***** 1040px이상 *****/
+@media (min-width:1040px){
+    h3 {
+        font-size: 16rem;
+    }
+}
+/***** 1080px이상 *****/
+@media (min-width:1080px){
+    header {
+        .header_in { 
+            nav {
+                li{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+   
+    article {
+        span {
+         font-size: 2.4rem;
+        }
+        p {
+         font-size: 1.4rem;
+        }
+    }
+    footer {
+        .footer_in {
+            justify-content: center;
+            
+            li a {               
+                margin: 0 3rem;
+            }
+            .sns_wrap {
+                bottom: 4rem;
+            }
+        }
+    }
+    
+}
+/***** 1190px이상 *****/
+@media (min-width:1190px){
+    article {
+        span {
+         font-size: 2.6rem;
+        }
+        p {
+         font-size: 1.6rem;
+        }
+    }
+}
+/***** 1920px이상 *****/
+@media (min-width:1920px){
+    article {
+        span {
+         font-size: 2.8rem;
+        }
+        p {
+         font-size: 1.8rem;
+        }
+    }
+
+}
 
 
 
