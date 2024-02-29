@@ -65,6 +65,7 @@ header .header_in nav li {
   display: none;
   font-size: 1.8rem;
   font-weight: 600;
+  margin-right: 3rem;
 }
 header .header_in nav li a {
   margin: 0 3rem;
@@ -330,9 +331,6 @@ footer .copy {
 }
 /***** 1080px이상 *****/
 @media (min-width: 1080px) {
-  header .header_in nav li {
-    display: inline-block;
-  }
   article span {
     font-size: 2.4rem;
   }
@@ -351,6 +349,9 @@ footer .copy {
 }
 /***** 1190px이상 *****/
 @media (min-width: 1190px) {
+  header .header_in nav li {
+    display: inline-block;
+  }
   article span {
     font-size: 2.6rem;
   }
@@ -769,6 +770,247 @@ footer .copy {
 @media (min-width: 1080px) {
   #wrap .visual .container h2 {
     font-size: 16rem;
+  }
+}
+.contents {
+  padding: 0 6rem;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+.contents h3 {
+  font-size: 10rem;
+  margin: 12rem -6rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 3rem;
+}
+.contents .num {
+  position: absolute;
+  top: 6.5rem;
+  left: 33rem;
+}
+.contents .num img {
+  height: 10rem;
+  transform: rotate(-90deg);
+}
+.contents .num button {
+  position: absolute;
+  top: -0.5rem;
+  width: 8rem;
+  height: 8rem;
+  font-size: 5rem;
+  color: #F0F0F0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.contents .artist_in {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.contents .artist_in .person {
+  width: 24.5%;
+}
+.contents .artist_in .person img {
+  width: 100%;
+}
+.contents .artist_in .person p {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+/* 768px이하 */
+@media (max-width: 768px) {
+  .contents {
+    padding: 0 2.5rem;
+  }
+  .contents h3 {
+    margin-left: -2.5rem;
+  }
+  .contents .num {
+    position: absolute;
+    top: 7rem;
+    left: 36rem;
+  }
+  .contents .num img {
+    height: 8rem;
+    margin-left: -3rem;
+  }
+  .contents .num button {
+    font-size: 3.2rem;
+  }
+  .contents .artist_in .person {
+    width: 32.3%;
+  }
+  .contents .artist_in .person img {
+    width: 100%;
+  }
+}
+/* 500px이하 */
+@media (max-width: 500px) {
+  .contents {
+    padding: 0 2.5rem;
+  }
+  .contents h3 {
+    font-size: 7rem;
+  }
+  .contents .num {
+    position: absolute;
+    top: 5rem;
+    left: 28rem;
+  }
+  .contents .num img {
+    height: 6rem;
+    margin-left: -2rem;
+  }
+  .contents .num button {
+    top: -1.5rem;
+    font-size: 2.8rem;
+    margin-left: -1rem;
+  }
+  .contents .artist_in {
+    display: block;
+  }
+  .contents .artist_in .person {
+    width: 100%;
+  }
+}
+main {
+  padding: 0 12rem;
+  font-family: "Poppins", sans-serif;
+}
+main h3 {
+  font-size: 10rem;
+  margin: 12rem 0 3rem -6rem;
+  font-family: "Poppins", sans-serif;
+}
+main .damien {
+  display: flex;
+  gap: 3rem;
+  height: 54rem;
+}
+main .damien img {
+  height: 54rem;
+}
+main .damien p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  overflow: hidden;
+}
+main .damien_pic {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .damien_pic .pic {
+  width: calc(33.33% - 20px);
+  margin: 1rem;
+}
+main .damien_pic .pic img {
+  width: 100%;
+}
+main .damien_pic .pic p {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+/* 1280px이하 */
+@media (max-width: 1280px) {
+  main .damien {
+    height: 48rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  main .damien img {
+    width: 50%;
+  }
+  main .damien p {
+    font-size: 1.6rem;
+  }
+}
+/* 1082px이하 */
+@media (max-width: 1082px) {
+  main .damien p {
+    font-size: 1.4rem;
+  }
+}
+/* 965px이하 */
+@media (max-width: 965px) {
+  main h3 {
+    font-size: 7rem;
+  }
+  main .damien {
+    display: block;
+    height: 100%;
+  }
+  main .damien img {
+    width: 100%;
+  }
+  main .damien p {
+    margin-top: 3rem;
+  }
+  main .damien_pic {
+    justify-content: space-between;
+  }
+  main .damien_pic .pic {
+    width: 45.3%;
+  }
+  main .damien_pic .pic img {
+    width: 100%;
+  }
+  main .damien_pic .pic p {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+}
+/* 768px 이하 */
+@media (max-width: 768px) {
+  main {
+    padding: 0 2.5rem;
+  }
+  main h3 {
+    font-size: 6rem;
+    margin-left: -3rem;
+  }
+  main .damien p {
+    margin-top: 2.2rem;
+  }
+  main .damien_pic {
+    justify-content: space-between;
+  }
+  main .damien_pic .pic {
+    width: 45.3%;
+  }
+  main .damien_pic .pic img {
+    width: 100%;
+  }
+  main .damien_pic .pic p {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+}
+/* 500px 이하 */
+@media (max-width: 500px) {
+  main h3 {
+    font-size: 4rem;
+    margin-left: -2rem;
+  }
+  main .damien p {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+  }
+  main .damien_pic {
+    display: block;
+    overflow: hidden;
+  }
+  main .damien_pic .pic {
+    width: 100%;
+    margin: auto;
+  }
+  main .damien_pic .pic p {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 }
 

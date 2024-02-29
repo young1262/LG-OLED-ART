@@ -33,13 +33,13 @@ header {
             align-items: center;
             width: 86rem;
             position: relative; 
-       
+            
             li {
                 font-family: "Poppins", sans-serif;
                 display: none;
                 font-size: 1.8rem;
                 font-weight: 600;
-                
+                margin-right: 3rem;
                 a {
                     margin: 0 3rem;
                     padding: 0.5rem;
@@ -349,16 +349,7 @@ footer {
 }
 /***** 1080px이상 *****/
 @media (min-width:1080px){
-    header {
-        .header_in { 
-            nav {
-                li{
-                    display: inline-block;
-                }
-            }
-        }
-    }
-   
+    
     article {
         span {
          font-size: 2.4rem;
@@ -383,6 +374,15 @@ footer {
 }
 /***** 1190px이상 *****/
 @media (min-width:1190px){
+    header {
+        .header_in { 
+            nav {
+                li{
+                    display: inline-block;
+                }
+            }
+        }
+    }
     article {
         span {
          font-size: 2.6rem;
