@@ -16,6 +16,29 @@ window.addEventListener('scroll',function(){
   if(this.window.scrollY == 0) header.classList.remove('on')
 })
 
+//헤더 버튼누르면 해당 section으로 스크롤
+
+const menuItems = document.querySelectorAll('nav > ul > li > a');
+let num = 0;
+
+menuItems.forEach(function(item,idx){
+    item.onclick = function(e){
+      e.preventDefault();
+
+    //let tagetName = item.getAttribute('data-target');
+    let tagetName = item.dataset.target;
+    document.querySelector(tagetName).scrollIntoView({ 
+    behavior:"smooth" })
+
+    menuItems[num].classList.remove('on');
+    
+
+    num = idx;
+    item.classList.add('on');
+    
+    }
+})
+
 /* top Btn */ 
 $(window).scroll(function(){
   let sct = $(window).scrollTop();
