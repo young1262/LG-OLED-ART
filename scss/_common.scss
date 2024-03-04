@@ -39,7 +39,8 @@ header {
                 display: none;
                 font-size: 1.8rem;
                 font-weight: 600;
-                margin-right: 3rem;
+                margin-right: 2rem;
+                
                 a {
                     margin: 0 3rem;
                     padding: 0.5rem;
@@ -70,13 +71,14 @@ header {
                 align-items: center;
                 position: absolute;
                 top: -0.4rem;
-                right: 0;           
+                right: 0;
+                          
                 img {
                     width: 2.4rem;
                     height: 2.6rem;
                     margin-left: 2rem;
                 }
-                button {
+                .open {
                     background: transparent;
                     border: none;
                     cursor: pointer;
@@ -133,12 +135,12 @@ header {
                 & a:after {
                     width: 100%;
                 }
+            }
+            .sub {
+                font-size: 3rem;
+                font-family: "Poppins", sans-serif;
+                line-height: 2;
             }                     
-        }
-        .sub {
-            font-size: 3rem;
-            font-family: "Poppins", sans-serif;
-            line-height: 2;
         }
         .glb {
             margin-top: 3rem;
@@ -301,7 +303,7 @@ footer {
         font-size: 1.8rem;
         font-family: "Poppins", sans-serif;
         padding: 0 6rem;
-    
+        
         .footer_in {
             display: flex;
             justify-content: space-between;

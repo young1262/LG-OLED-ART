@@ -12,7 +12,7 @@
     <header>
       <div class="header_in">
           <h1>
-              <a href="#">
+              <a href="index.html">
                   <img src="./img/logo1.png" alt="logo">
               </a>
           </h1>
@@ -26,32 +26,33 @@
               <div class="icon">
                   <a href="#"><img src="./img/serch.png" alt="검색"></a>
                   <a href="#"><img src="./img/glb.png" alt="언어선택"></a>
-                  <button><img src="./img/mdi_hamburger-menu.png" alt="햄버거버튼"></button>
+                  <a href="#" class="open"><img src="./img/mdi_hamburger-menu.png" alt="햄버거버튼"></a>
               </div>
           </nav>
           
           <!-- 서브 메뉴 -->
           <div class="subNav">
-              <div class="subList">
-                  <a href="#" class="close"><img src="./img/close.png" alt="close" ></a>
-                  <ul class="sub_menu">
-                      <li><a href="#">Project</a></li>
-                      <li><a href="artist.html">Artist</a></li>
-                      <li><a href="#">Artwork</a></li>
-                      <li><a href="#">About</a></li>
-                  </ul>
-                  <div class="sub">
-                     <li><a href="contact.html">Contact Us</a></li>
-                     <li><a href="limited.html">Limited Edition</a></li>
-                  </div>
-                  <div class="glb">
-                      <span>ENG</span><span>KOR</span>
-                  </div>
-                  
-              </div>                    
+            <div class="subList">
+              <a href="#" class="close">
+                  <img src="./img/close.png" alt="close" >
+              </a>
+              <ul class="sub_menu">
+                  <li><a href="#">Project</a></li>
+                  <li><a href="artist.html">Artist</a></li>
+                  <li><a href="#">Artwork</a></li>
+                  <li><a href="#">About</a></li>
+                  <li class="sub"><a href="contact.html">Contact Us</a></li>
+                  <li class="sub"><a href="limited.html">Limited Edition</a></li>                          
+              </ul>             
+              <div class="glb">
+                  <span>ENG</span><span>KOR</span>
+              </div>
+              
+          </div>                    
           </div>
       </div>
     </header>
+    
     <!-- content 영역 -->
     <div class="contents">
       <h3>Artist</h3>
@@ -59,56 +60,9 @@
         <img src="./img/long-arr.png" alt="">
         <button>12</button>
       </div>
-      <div class="artist_in">
-        <div class="person">
-          <a href="#"><img src="./img/Ada.png" alt="Ada Sokol"></a>
-          <p>Ada Sokol</p>
-        </div>
-        <div class="person">
-          <a href="#"><img src="./img/Ahn.jpg" alt="안 만오"></a>
-          <p>안 만오</p>
-        </div>
-        <div class="person">
-          <a href="damien.html"><img src="./img/damien.png" alt="Damien"></a>
-          <p>Damien</p>
-        </div>
-        <div class="person">
-          <a href="#"><img src="./img/Es.jpg" alt="Es Devlin"></a>
-          <p>Es Devlin</p>
-        </div>
-        <div class="person">
-          <a href="#"><img src="./img/Jason.jpg" alt="Jason Kim"></a>
-          <p>Jason Kim</p>
-        </div>
-        <div class="person">
-          <a href="#"><img src="./img/Je.png" alt="Je Baak"></a>
-          <p>Je Baak</p>
-        </div>
-        <div class="person">
-          <a href="#"><img src="./img/Jul.png" alt="Julianknxx"></a>
-          <p>Julianknxx</p>
-        </div>
-        <div class="person">
-          <a href="#"><img src="./img/Won.png" alt="김 정원"></a>
-          <p>김 정원</p>
-        </div>
-        <div class="person">
-          <a href="#"><img src="./img/kim.jpg" alt="김 환기"></a>
-          <p>김 환기</p>
-        </div>
-        <div class="person">
-          <a href="#"><img src="./img/Qua.jpg" alt="Quayola"></a>
-          <p>Quayola</p>
-        </div>
-        <div class="person">
-          <a href="#"><img src="./img/Six.png" alt="Six N. Five"></a>
-          <p>Six N. Five</p>
-        </div>
-        <div class="person">
-          <a href="#"><img src="./img/Vakki.png" alt="Vakki"></a>
-          <p>Vakki</p>
-        </div>
-      </div>
+      <ul class="artist_in">
+       
+      </ul> 
     </div>
 
     <!-- footer -->
@@ -138,6 +92,9 @@
   </div>
 
   <script src="./js/jquery-3.7.1.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/artist.js" type="module"></script>
 </body>
 </html>
+
+
+

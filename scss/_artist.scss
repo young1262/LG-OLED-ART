@@ -31,22 +31,25 @@
       cursor: pointer;
     }
   }
-  .artist_in {
+  ul.artist_in {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-
-    .person {
+    li {
       width:24.5%;
-      img {
-        width: 100%;
+      a {
+        img {
+          width: 100%;
+        }
       }
       p {
         font-size: 2rem;
         margin: 1rem 0;
+        
       }
     }
+    
   }
 }
 /* 768px이하 */
@@ -71,8 +74,8 @@
 
       }
     }
-    .artist_in {
-      .person {
+    ul.artist_in {
+      li{
         width:32.3%;
         img {
           width: 100%;
@@ -105,10 +108,10 @@
           margin-left: -1rem;
         }
       }       
-      .artist_in {
+      ul.artist_in {
         
         display: block;
-        .person {
+        li {
           width: 100%;
         }
       }    

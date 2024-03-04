@@ -1,0 +1,64 @@
+{"data":[
+  { "id":1,
+    "img":"./img/Ada.png",
+    "name":"Ada Sokol"
+
+  },
+  { "id":2,
+    "img":"./img/Ahn.jpg",
+    "name":"안 만오"
+
+  },
+  { "id":3,
+    "img":"./img/damien.png",
+    "name":"Damien"
+
+  },
+  { "id":4,
+    "img":"./img/Es.jpg",
+    "name":"Es Devlin"
+
+  },
+  { "id":5,
+    "img":"./img/Jason.jpg",
+    "name":"Jason Kim"
+
+  },
+  { "id":6,
+    "img":"./img/Je.png",
+    "name":"Je Baak"
+
+  },
+  { "id":7,
+    "img":"./img/Jul.png",
+    "name":"Julianknxx"
+
+  },
+  { "id":8,
+    "img":"./img/Won.png",
+    "name":"김 정원"
+
+  },
+  { "id":9,
+    "img":"./img/kim.jpg",
+    "name":"김 환기"
+
+  },
+  { "id":10,
+    "img":"./img/Qua.jpg",
+    "name":"Quayola"
+
+  },
+  { "id":11,
+    "img":"./img/Six.png",
+    "name":"Six N. Five"
+
+  },
+  { "id":12,
+    "img":"./img/Vakki.png",
+    "name":"Vakki"
+
+  }
+  
+
+]}

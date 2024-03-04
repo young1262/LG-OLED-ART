@@ -43,7 +43,7 @@ body {
             text-align:center;
          }
          p:last-child {
-            margin-top:2rem;
+            margin-top:5rem;
             font-size: 4.5rem;
             text-align:center;
             color:$text-color;
@@ -68,7 +68,6 @@ body {
 
          .x_par {
             width:50%;
-            
          p:first-child {
             margin-top:-3rem;
             font-family: "Jomolhari";
@@ -139,19 +138,19 @@ body {
                margin-top:5rem;
                margin-bottom:3rem;
                color:#fff;
-               font-size: 2rem;
+               font-size: 3.5rem;
             }
             p:last-child{
                
                margin:0 auto;
-               line-height:8rem;
+               line-height:10rem;
                text-align:center;
                width:100%;
-               height:8rem;
+               height:10rem;
                border-radius:10rem;
                background:$text-color;
                color:$bg-color;
-               font-size: 2.5rem;
+               font-size: 3rem;
                font-weight: bold;
 
                i{ margin-left:0.5rem;
@@ -231,7 +230,7 @@ body {
                font-size: 6rem;
             }
             p:last-child {
-               font-size: 2rem;
+               font-size: 3rem;
             }
          }
          .moooix {
@@ -240,17 +239,17 @@ body {
                   font-size: 6rem;
                }
                p:last-child {
-                  font-size: 2rem;
+                  font-size: 3rem;
                }
             }
          }
          .edition {
             .edititle {
-               font-size: 4rem;
+               font-size: 6rem;
             }
             .edition_par {
                p {
-                  font-size: 2rem;
+                  font-size: 3rem;
             }
          }
          .product {
@@ -305,10 +304,10 @@ body {
                .x_par {
                   p:first-child {
                      font-size: 4.5rem;
-                     margin-top:-1rem;
+                     margin-top:-2rem;
                   }
                   p:last-child {
-                     font-size: 1.75rem;
+                     font-size: 2.5rem;
                      
                   }
                }
@@ -342,8 +341,8 @@ body {
          .moooi {
             
             p:last-child {
-               
-               
+               margin-top:2.5rem;
+               font-size: 3rem;
             }
          }
          
@@ -387,10 +386,10 @@ body {
          .moooix {
             .x_par {
                p:first-child {
-                  font-size: 2.75rem; 
+                  font-size: 4rem; 
                }
                p:last-child {
-                  font-size: 1.5rem; 
+                  font-size: 2.25rem; 
                }
             }
          }
@@ -430,11 +429,11 @@ body {
          .moooix {
             .x_par {
                p:first-child {
-                  font-size: 2.75rem; 
-                  margin-top:-1rem;
+                  font-size: 3.5rem; 
+                  margin-top:-1.5rem;
                }
                p:last-child {
-                  font-size: 1.5rem; 
+                  font-size: 2rem; 
                }
             }
          }
@@ -460,16 +459,16 @@ body {
             
             p:last-child {
                margin-top:2rem;
-               font-size: 1.75rem;
+               font-size: 2rem;
             }
          }
          .moooix {
             .x_par {
                p:first-child {
-                  font-size: 2.5rem; 
+                  font-size: 3rem; 
                }
                p:last-child {
-                  font-size: 1.25rem; 
+                  font-size: 1.75rem; 
                }
             }
          }
@@ -477,7 +476,24 @@ body {
    }
 
 }
+@media (max-width:996px) {
+   #wrap {
+      .paragraph {
+         .moooix {
+            .x_par {
+               p:first-child {
+                  font-size: 2.5rem; 
+                  margin-top:-1rem;
+               }
+               p:last-child {
+                  font-size: 1.5rem; 
+               }
+            }
+         }
+      }
+   }
 
+}
 
 
 @media (max-width:975px) {
@@ -695,7 +711,7 @@ body {
          p:last-child {
             
                margin-top:1.5rem;
-               font-size: 1.2rem;
+               font-size: 1.5rem;
             
          }
       }
@@ -704,7 +720,7 @@ body {
          gap:2rem;
             .x_par {
                p:last-child {
-                  font-size:1rem;
+                  font-size:1.25rem;
             }
          }
       }
@@ -773,7 +789,7 @@ body {
       .edition {
          
          .edititle {
-            font-size: 2rem;
+            font-size: 2.5rem;
          }
          .edition_img {
             gap:1rem;
@@ -788,7 +804,9 @@ body {
       .paragraph {
          .edition {
             
-            
+            .edititle {
+               font-size: 2.25rem;
+            }
             .edition_img {
                gap:1rem;
             }
@@ -817,12 +835,9 @@ body {
          .paragraph {
             margin:0 3rem;
          .moooi {
-            p:first-child {
-               font-size: 4rem;;
-            }
             p:last-child {
                margin-top:1.25rem;
-               font-size: 1rem;
+               font-size: 1.25rem;
             }
          
             
@@ -865,7 +880,7 @@ body {
       .paragraph {
          .edition {
             .edititle {
-               font-size: 1.75rem;
+               font-size: 2rem;
             }
             .edition_par { gap:2rem;
                p {
@@ -904,10 +919,10 @@ body {
       .paragraph {
         .moooi {
          p:first-child {
-            font-size: 3rem;
+            font-size: 4rem;
          }
          p:last-child {
-            font-size: 0.75rem;
+            font-size: 1rem;
             margin-top:1rem;
          }
 
@@ -1026,7 +1041,7 @@ body {
          .product {
             .prod_par {
                p:first-child {
-                  margin-top:1rem;
+                  margin-top:1.5rem;
                   font-size: 0.5rem;
                }
                p:last-child {

@@ -1,5 +1,5 @@
 /* 햄버거버튼 open*/ 
-$('button').click(function(){
+$('.open').click(function(){
   $('.subNav').animate({right:0});
 })
 
@@ -31,3 +31,5 @@ $('.top_btn').click(function(){
       scrollTop: 0
   },500);
 });
+
+
